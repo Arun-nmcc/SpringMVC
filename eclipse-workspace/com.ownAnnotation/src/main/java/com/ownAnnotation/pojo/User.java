@@ -1,13 +1,15 @@
 package com.ownAnnotation.pojo;
 
+
+
 import com.ownAnnotation.annotation.PinValidator;
 
 public class User {
 	static {
 		System.out.println("inside user class");
 	}
-	
-
+	@javax.validation.constraints.NotEmpty
+private String name;
 	private Phone phone;
 	private Credit card;
 	@PinValidator
@@ -36,6 +38,14 @@ public class User {
 
 	public void setPin(String pin) {
 		this.pin = pin;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 		

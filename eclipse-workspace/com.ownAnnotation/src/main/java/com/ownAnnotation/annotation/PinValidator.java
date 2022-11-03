@@ -15,7 +15,7 @@ import javax.validation.Payload;
 
 public @interface PinValidator {
 	 
-	String message() default "SomeThingWrong";
+	String message() default "{pin}";
 	  
 	
 	Class<?>[] groups() default { };

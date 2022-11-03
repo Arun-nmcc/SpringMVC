@@ -11,6 +11,11 @@
 <body>
 <form:form action="process" modelAttribute="user">
 Enter the phone no      <form:input path="phone"/>
+
+enter the name <form:input path="name"/>
+<form:errors path="name"/>
+
+
 <%-- Ennter the symbol<form:input path="symbol"/> --%>
 ener the creditCadeno<form:input path="pin"/>
  <form:errors path="pin"></form:errors> 
